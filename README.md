@@ -21,6 +21,7 @@ Permissions
 ----------
 
 Permission | Description | default
+-------------- | -------------- | --------------
 potioncommanda.milk | Use the /milk command | op
 potioncommands.milk.other | Use the /milk command on others | op
 potioncommands.milk.bypass | Allows the player to bypass the cooldown | op
