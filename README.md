@@ -26,8 +26,8 @@ potioncommanda.milk | Use the /milk command | op
 potioncommands.milk.other | Use the /milk command on others | op
 potioncommands.milk.bypass | Allows the player to bypass the cooldown | op
 potioncommands.reload | Allows the player to reload the configuration | op
-potioncommands.<custom permission for dynamic command> | Allows the player to use the command with the permission node specified in the config | op
-potioncommands.<custom permission for dynamic command>.bypass | Allows the player to bypass the cooldown for that command | op  
+potioncommands.[custom permission for dynamic command] | Allows the player to use the command with the permission node specified in the config | op
+potioncommands.[custom permission for dynamic command].bypass | Allows the player to bypass the cooldown for that command | op  
 
 Installing
 ----------
