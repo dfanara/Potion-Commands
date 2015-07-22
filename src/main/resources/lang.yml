@@ -1,0 +1,8 @@
+# Use &0-9a-f for colors.
+
+title: "&7[&4PotionCommands&7] &r"
+reloaded: "Configuration reloaded."
+permission: "&4You do not have permission."
+offline-player: "&4That player is not online."
+milk-success: "&aRemoved potion effects from %p%"
+cooldown: "&cYou must wait %t% more seconds before using that command."

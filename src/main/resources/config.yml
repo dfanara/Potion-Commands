@@ -1,0 +1,13 @@
+#The nv command is an example of a command that registers a night_vision effect
+#Potion effects use the name shown on http://minecraft.gamepedia.com/Status_effect
+#Times are to be in terms of ticks. (20 ticks per second)
+#Amplifier 0 = Normal Power
+milk:
+  cooldown: 0 #Milk command cooldown for 0 seconds
+commands:
+  nv:
+    permission: nightvision #potioncommands.command.nightvision
+    effect: NIGHT_VISION
+    amplifier: 0
+    duration: 200
+    cooldown: 1200 #1 Minute cool down

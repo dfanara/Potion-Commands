@@ -1,0 +1,22 @@
+name: PotionCommands
+author: Shadowwolf97
+version: 1.0
+main: com.shdwlf.PotionCommands.PotionCommands
+commands:
+  milk:
+    description: "Remove current potion effects."
+    usage: "/milk [player]"
+  potioncommands:
+    description: "Base command for PotionCommands."
+    usage: "/potioncommands"
+    aliases: pc
+permissions:
+  potioncommands.milk:
+    description: "Clear all potion effects."
+    default: op
+  potioncommands.milk.other:
+    description: "Clear the potion effects of others."
+    default: op
+  potioncommands.reload:
+    description: "Reload the configuration file."
+    default: op
