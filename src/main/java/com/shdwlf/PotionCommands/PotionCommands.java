@@ -10,6 +10,7 @@ import java.util.logging.Level;
 import com.shdwlf.PotionCommands.commands.CommandListener;
 import com.shdwlf.PotionCommands.commands.MilkCommand;
 import com.shdwlf.PotionCommands.commands.PotionCommandsCommand;
+import com.shdwlf.PotionCommands.util.MetricsLite;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -30,6 +31,15 @@ public class PotionCommands extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new CommandListener(this), this);
         getServer().getPluginCommand("potioncommands").setExecutor(new PotionCommandsCommand(this));
         getServer().getPluginCommand("milk").setExecutor(new MilkCommand(this));
+
+        try {
+            MetricsLite metrics = new MetricsLite(this);
+            metrics.start();
+            Bukkit.getLogger().info("[PotionCommands] Metrics enabled.");
+        } catch (IOException e) {
+            // Failed to submit the stats :-(
+            Bukkit.getLogger().info("[PotionCommands] Failed to enable Metrics. " + e.getLocalizedMessage());
+        }
     }
 
     @Override
